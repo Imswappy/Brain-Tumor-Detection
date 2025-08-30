@@ -83,9 +83,7 @@ base_model = VGG16(
 - `weights="imagenet"`: initializes weights from ImageNet (~1.4M images, 1000 classes).  
 
 Mathematically, each convolutional layer applies:
-\$
-h_{i,j}^{(k)} = \sigma \left( \sum_{m,n} W_{m,n}^{(k)} \cdot x_{i+m, j+n} + b^{(k)} \right)
-\$
+<img width="491" height="139" alt="image" src="https://github.com/user-attachments/assets/4b3d794f-99f0-4c6c-9ba4-eda7f9457edc" />
 
 where:
 - W^{(k)}: convolutional kernel for feature map k  
@@ -122,14 +120,12 @@ model = Sequential([
 
 - **Flatten:** Reshapes VGG16 feature maps (4 × 4 × 512) → (8192,).  
 - **Dense(128, relu):** Fully connected layer learns non-linear combinations of features.  
-  \$
-  h = ReLU(Wx + b)
-  \$
+ <img width="270" height="52" alt="image" src="https://github.com/user-attachments/assets/2cf5d1ab-c611-4e93-8514-b6d4f7310f0d" />
+
 - **Dropout(0.3, 0.2):** Randomly zeroes units during training, reducing overfitting.  
 - **Output Layer:** Softmax classifier for 4 classes:  
-  \$
-  P(y=i|x) = \frac{\exp(z_i)}{\sum_{j=1}^{4} \exp(z_j)}
-  \$  
+<img width="365" height="120" alt="image" src="https://github.com/user-attachments/assets/97e12f86-7221-4f25-a15f-b5f7f0147a2a" />
+ 
 
 ---
 
@@ -141,9 +137,8 @@ Sections:
 3. **Preprocessing**: Resize, normalize, split  
 4. **Model**: VGG16 base + custom classifier  
 5. **Training**: Adam optimizer, categorical crossentropy loss  
-   \$
-   L = - \frac{1}{N} \sum_{i=1}^N \sum_{c=1}^C y_{ic} \log(\hat{y}_{ic})
-   \$
+<img width="340" height="107" alt="image" src="https://github.com/user-attachments/assets/dcca8f71-eb06-4c47-a664-eabf2bd20f71" />
+
 6. **Evaluation**: Accuracy, confusion matrix, classification report  
 7. **Saving model** in `.h5` format  
 
