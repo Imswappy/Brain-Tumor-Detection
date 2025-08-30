@@ -1,4 +1,4 @@
-# 🧠 Brain Tumor MRI Classification using Deep Learning
+# 🧠 NeuroVision: Brain Tumor MRI Classification with Deep Learning
 
 ![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
 ![Keras](https://img.shields.io/badge/Framework-Keras-blue)
