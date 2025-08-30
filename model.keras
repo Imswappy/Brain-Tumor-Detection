@@ -1,0 +1,14 @@
+import tensorflow as tf
+from tensorflow import keras
+
+# Path to your existing model
+old_model_path = "model.h5"        # replace with your actual path
+new_model_path = "model.keras"     # new safer format
+
+# ✅ Load old h5 safely
+model = keras.models.load_model(old_model_path, compile=False)
+
+# ✅ Save in modern .keras format
+model.save(new_model_path, save_format="keras")
+
+print(f"✅ Model successfully converted and saved as {new_model_path}")
