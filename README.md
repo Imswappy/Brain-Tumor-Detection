@@ -208,7 +208,12 @@ streamlit run streamlit_app.py
 - Local: http://localhost:8501  
 - LAN: http://<your-ip>:8501  
 - Global: deploy on **Streamlit Cloud**
-- <img width="379" height="720" alt="image" src="https://github.com/user-attachments/assets/7a2dd4b8-cc09-44a9-8246-f6c128095219" />
+- <img width="464" height="927" alt="image" src="https://github.com/user-attachments/assets/794eaa0d-eb8b-49ae-9ef6-356c2daf7f62" /> <img width="457" height="929" alt="image" src="https://github.com/user-attachments/assets/16e4bfcb-66cb-4756-9237-a3e325e55509" />
+<img width="464" height="935" alt="image" src="https://github.com/user-attachments/assets/87bb2bbc-a614-4fc6-885e-5961376ae2b3" /> <img width="470" height="930" alt="image" src="https://github.com/user-attachments/assets/31f3d85e-4915-402e-9a65-696660237b81" />
+
+
+
+
 
 
 ---
