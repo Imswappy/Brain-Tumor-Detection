@@ -199,7 +199,9 @@ streamlit run streamlit_app.py
 
 - Local: http://localhost:8501  
 - LAN: http://<your-ip>:8501  
-- Global: deploy on **Streamlit Cloud**  
+- Global: deploy on **Streamlit Cloud**
+- <img width="379" height="720" alt="image" src="https://github.com/user-attachments/assets/7a2dd4b8-cc09-44a9-8246-f6c128095219" />
+
 
 ---
 
