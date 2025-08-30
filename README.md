@@ -103,6 +103,7 @@ base_model.layers[-4].trainable = True
 - Lower layers retain **general features** (edges, textures).  
 - Top 3 layers fine-tuned to capture **domain-specific features** of MRI tumors.  
 
+
 ### 🔹 Step 3: Custom Classification Head
 ```python
 from tensorflow.keras.models import Sequential
@@ -133,14 +134,21 @@ model = Sequential([
 
 Sections:
 1. **Dataset loading** with KaggleHub  
-2. **EDA**: Class distributions, sample MRI visualization  
+2. **EDA**: Class distributions, sample MRI visualization
+   <img width="1484" height="678" alt="image" src="https://github.com/user-attachments/assets/7c03c569-4821-4e08-a5a9-69ce111462e6" />
 3. **Preprocessing**: Resize, normalize, split  
 4. **Model**: VGG16 base + custom classifier  
 5. **Training**: Adam optimizer, categorical crossentropy loss  
 <img width="340" height="107" alt="image" src="https://github.com/user-attachments/assets/dcca8f71-eb06-4c47-a664-eabf2bd20f71" />
+<img width="820" height="402" alt="image" src="https://github.com/user-attachments/assets/361f3639-a715-4571-828f-d570024132d2" />
 
-6. **Evaluation**: Accuracy, confusion matrix, classification report  
-7. **Saving model** in `.h5` format  
+
+6. **Evaluation**: Accuracy, confusion matrix, classification report
+   <img width="662" height="556" alt="image" src="https://github.com/user-attachments/assets/880a05e0-ead1-45e7-a58c-15fb24a928dd" />
+   <img width="854" height="710" alt="image" src="https://github.com/user-attachments/assets/db0363a0-ffbd-4ea4-8cf3-684bc7572cd8" />
+
+
+8. **Saving model** in `.h5` format  
 
 ---
 
